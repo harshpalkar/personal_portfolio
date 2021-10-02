@@ -1,13 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.adobe.com/fonts/lexia");
+.profile {
+  border-radius: 50% 50% 50% 50%;
+}
+.heading {
+  width: 100%;
+  color: floralwhite;
+  font-family: "butler";
+  position: relative;
+  align-content: center;
+  left: 19vw;
+  top: 19vh;
+  align-items: center;
+  font-size: 40px;
+}
 
 /* For topNav bar */
 .topnav {
-  overflow: hidden;
+  /* overflow: hidden; */
   /* margin-left: 620px; */
   align-items: center;
   position: sticky;
   display: inline;
+  background-color: black;
 }
 
 /* Styling links inside the navbar */
@@ -48,17 +66,18 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
+  background-size: contain;
 }
 .hero {
   width: 100%;
   height: 800px;
-  background-image: url(./wave\(6\).svg);
-  background-image: url(./birds.jpg);
+  /* background-image: url(./wave\(6\).svg); */
+  background-image: url(./mike-yukhtenko-wfh8dDlNFOk-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   backdrop-filter: blur(5px);
-  z-index: 0;
+  z-index: -1;
   /* filter: blur(5x);
   -webkit-filter: blur(5px); */
 }
@@ -81,15 +100,15 @@ body {
 }
 .hero-detail h1 {
   /* margin-top: 2.2rem; */
-  font-size: 4.5srem;
+  font-size: 4.5rem;
 }
-
+/* 
 h1 {
   margin-left: 250px;
   margin-top: 250px;
   text-shadow: 2px 2px 2px 4px #e67b7b;
-  font-size: 40px;
-}
+  font-size: 40px; */
+/* } */
 a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -117,7 +136,7 @@ a {
   transform-box: 1;
   border-color: skyblue;
 }
-.line {
+/* .line {
   height: 1px;
   width: 400px;
   background: rgb(255, 0, 0);
@@ -146,7 +165,7 @@ a {
   100% {
     left: 0px;
   }
-}
+} */
 /* For toggle switch */
 .switch {
   display: inline-block;
@@ -207,9 +226,7 @@ label:active:after {
   /* width: 30px; */
   text-align: right;
   text-decoration: none;
-  border-radius: 50px;
-  background: #ffffff;
-  box-shadow: 2px 2px 6px #222222;
+  opacity: 0.5;
 }
 /* hovering effect */
 .fa:hover {
@@ -223,6 +240,8 @@ label:active:after {
   margin-left: 265px;
   color: white;
   transition: transform 0.7s;
+  margin-left: 44rem;
+  margin-top: 17rem;
 }
 .fa-twitter {
   background: none;
@@ -293,29 +312,12 @@ label:active:after {
   transform: scale(1.1);
 }
 
-html {
-  scroll-behavior: smooth;
-}
 .button {
   border-radius: 360px;
   border-width: 10px;
   float: right;
   margin-right: 1rem;
 }
-
-/* .point {
-  width: 3px;
-  height: 3px;
-  background: tomato;
-  border-radius: 5px;
-  transition: width 1s ease;
-  margin-left: 70rem;
-  margin-bottom: 10rem;
-}
-
-.point:hover {
-  width: 400px;
-} */
 #about {
   color: floralwhite;
   font-family: montserrat;
