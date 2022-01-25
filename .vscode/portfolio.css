@@ -502,11 +502,31 @@ label:active:after {
 }
 #line2 {
   height: 1px;
-  width: 835px;
+  width: 480px;
   background: rgb(255, 255, 255);
   position: relative;
+  /* align-content: center; */
   margin-top: 0px;
-  left: 45%;
+  left: 32%;
+  transform: scale();
+}
+#imageTitle {
+  /* text-decoration: underline; */
+  color: white;
+}
+#imageTitle :hover {
+  transform: scale3d(1.5);
+}
+@keyframes both {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 80px;
+  }
 }
 .bgimg {
   background-image: url(./wave\(4\).svg);
@@ -535,7 +555,8 @@ label:active:after {
   background-color: rgb(255, 255, 255);
 }
 .p1 {
-  padding: 0px 30px 0px 0px;
+  /* padding: 0px 30px 90px 0px; */
+  margin-left: 50rem;
 }
 .card {
   /* Add shadows to create the "card" effect */
